@@ -11,7 +11,7 @@ const BlogPost = ({image,author,title,blog}) => {
       <h1 className='itim-regular mt-2 text-[0.7rem] sm:text-[1.2rem] pl-1 font-bold line-clamp-2'>
         {title}
       </h1>
-      <div className='flex gap-2 mt-2'>
+      <div className='flex gap-2 mt-4 sm:mt-2'>
       <h1 className='font-semibold text-[0.7rem] sm:text-[1.1rem] pl-1 mt-2 '>By:</h1>
       <img 
     src={blog?.user?.avatar } 
