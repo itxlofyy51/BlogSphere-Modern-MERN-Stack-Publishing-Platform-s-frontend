@@ -2,8 +2,8 @@ import axios from "axios";
 
 const api = axios.create({
   import.meta.env.VITE_API_URL 
-        ? `${import.meta.env.VITE_API_URL}/api/auth` 
-        : "http://localhost:3000/api/auth",
+        ? `${import.meta.env.VITE_API_URL}/api/blog` 
+        : "http://localhost:3000/api/blog",
   withCredentials: true,
 });
 
