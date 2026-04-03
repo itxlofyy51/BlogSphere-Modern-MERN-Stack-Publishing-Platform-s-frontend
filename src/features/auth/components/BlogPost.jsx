@@ -16,7 +16,7 @@ const BlogPost = ({image,author,title,blog}) => {
       <img 
     src={blog?.user?.avatar } 
     alt="user" 
-    className="w-10 h-10 mb-2 rounded-full object-cover border-2 border-white shadow-sm opacity-80 group-hover:opacity-100 transition-opacity"
+    className="sm:w-10 sm:h-10 h-5 h-5 mb-2 rounded-full object-cover border-2 border-white shadow-sm opacity-80 group-hover:opacity-100 transition-opacity"
   />
       <p className='text-[0.6rem] sm:text-[1rem] pt-px mt-2 '>{author}</p>
       </div>
