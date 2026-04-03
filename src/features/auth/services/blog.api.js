@@ -1,9 +1,10 @@
 import axios from "axios";
 
 const api = axios.create({
-  import.meta.env.VITE_API_URL 
-        ? `${import.meta.env.VITE_API_URL}/api/blog` 
-        : "http://localhost:3000/api/blog",
+  // Add the 'baseURL' key here!
+  baseURL: import.meta.env.VITE_API_URL 
+    ? `${import.meta.env.VITE_API_URL}/api/blog` 
+    : "http://localhost:3000/api/blog",
   withCredentials: true,
 });
 
