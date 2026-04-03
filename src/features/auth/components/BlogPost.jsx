@@ -5,7 +5,7 @@ const BlogPost = ({image,author,title,blog}) => {
   
   return (
     <Link to={`/blog/${blog._id}`}>
-     <div className='bg-white shadow-sm p-2 pb-0 flex flex-col h-auto min-h-75'>
+     <div className='bg-white shadow-sm p-2 pb-0 flex flex-col h-auto min-h-50 sm:min-h-75'>
       {/* 'aspect-video' or 'aspect-square' on the IMAGE, not the container */}
       <img src={image} alt="blog" className='w-full aspect-video object-cover rounded-sm' />
       <h1 className='itim-regular mt-2 text-[0.7rem] sm:text-[1.2rem] pl-1 font-bold line-clamp-2'>
