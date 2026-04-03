@@ -2,7 +2,9 @@ import axios from "axios";
 import { Form } from "react-router";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL/api/auth || "http://localhost:3000/api/auth",
+ import.meta.env.VITE_API_URL 
+        ? `${import.meta.env.VITE_API_URL}/api/auth` 
+        : "http://localhost:3000/api/auth",
   withCredentials: true, // send cookies automatically
 });
 
